@@ -1,0 +1,118 @@
+import java.util.Scanner;
+ 
+public class laboratory{
+ 
+     
+    public static void main(String[] args) {
+         
+       Scanner sn = new Scanner(System.in);
+       boolean go out = false;
+       int option;
+        String s1 = ""; 
+        String s2 = ""; 
+         String s3 = ""; 
+       while(!go out){
+            
+           System.out.println("1. Enter character string");
+           System.out.println("2.Show character and the position in the string");
+           System.out.println("3.Division of real numbers");
+           System.out.println("4.Go out");
+            
+           System.out.println("Write one of the options");
+           option = sn.nextInt();
+            
+           switch(option){
+               case 1: {
+                   System.out.println("Please enter a character string");
+              s1 = sn.nextLine();
+              s2 = sn.nextLine();
+              s3 = sn.nextLine();
+                 
+                 String union;
+                 union = s1+s2+s3;
+                 System.out.println(union);                             
+                }
+                break;
+               case 2: {
+                   System.out.println("You have selected the character display option");
+                 float length1 = s1.length();
+                 float length2 = s2.length();
+                 float length3 = s3.length();
+                  System.out.println("The length of the chain 1 is:" + s1.length);                  
+                   System.out.println("The length of the chain 2 is:" + s2.length());
+                    System.out.println("The length of the chain 3 is:" + s3.length());
+                }
+
+                   break;
+                case 3:  {
+                
+                System.out.println("Please enter the position for the chain 1");
+                int p1= sn.nextInt();
+                System.out.println("The letter in this position is" + s1.charAt()[p1]);
+                System.out.println("Please enter the position for the chain 2");
+                int p2= sn.nextInt();
+                System.out.println("The letter in this position is" + s2.charAt()[p2]);
+                 System.out.println("Please enter the position for the chain 3");
+                int p3= sn.nextInt();
+                System.out.println("The letter in this position is" + s3.charAt()[p3]);
+
+                } 
+
+                  
+                break;
+                   case 4: {
+                   float number1 = 0;
+                   float number2 = 0;
+                   float result;
+               Scanner reader = new Scanner (System.in);
+                System.out.println("Enter the first number:");
+                number1 = reader.nextFloat();
+               
+                System.out.println("Enter the second number:");
+                number2 = reader.nextFloat();
+
+                result = number1/number2;
+                System.out.println("The division is " + number1 + " / " + number2 + " = " + result);
+                
+               }
+
+               break;
+                case 5: {
+                   go out=true;
+                  }
+                   break;
+                default:
+                   System.out.println("Only numbers between 1 and 4");
+           
+                 
+          }
+                 
+System.out.println("Enter the length of the first array");
+		int length1 = sn.nextInt();
+		int [] array1 = new int[length1]; 
+		for (int i = 0; i < array1.length; i++) {
+			array1[i] = sn.nextInt();
+		
+
+System.out.println("Enter the length of the second array");
+		int length2 = sn.nextInt();
+		int [] array2 = new int[length2]; 
+		for (int i = 0; i < array2.length; i++) {
+			array2[i] = sn.nextInt();
+
+System.out.println("Enter the length of the third array");
+		int length3 = sn.nextInt();
+		int [] array3 = new int[length3]; 
+		for (int i= 0; i < array3.length; i++) {
+			array3[i] = sn.nextInt();
+		}
+
+
+	           }
+          }
+       }     
+   }
+}
+              
+
+
